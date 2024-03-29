@@ -12,4 +12,6 @@ sizee=$(echo "$size" | cut -f1)
 mkdir -p /home/shittim/log
 echo "$mem,$swap,/home/shittim,$sizee" > /home/shittim/log/metrics_$time.log
 
+chmod 600 /home/shittim/log/metrics_$time.log
+
 #* * * * * sleep 60 && /home/shittim/Sisop-1-2024-MH-IT06/soal_4/minute_log.sh
